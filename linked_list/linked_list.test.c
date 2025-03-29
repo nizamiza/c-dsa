@@ -1,13 +1,13 @@
-#include "./linked_list.c"
-#include <assert.h>
+#pragma once
+#include "linked_list.unity.h"
 
 typedef struct {
     const char *id;
     int32_t value;
-} Data;
+} TestData;
 
 void test_LinkedList_alloc(void) {
-    Data sample = {.id = "alloc-test", .value = 32};
+    TestData sample = {.id = "alloc-test", .value = 32};
 
     LinkedListNode *node = LinkedListNode_alloc(&sample);
 
@@ -20,10 +20,10 @@ void test_LinkedList_alloc(void) {
 }
 
 void test_LinkedList_head(void) {
-    Data d1 = {.id = "entry-1", .value = -12};
-    Data d2 = {.id = "entry-2", .value = 5};
-    Data d3 = {.id = "entry-3", .value = 16};
-    Data d4 = {.id = "entry-3", .value = 65};
+    TestData d1 = {.id = "entry-1", .value = -12};
+    TestData d2 = {.id = "entry-2", .value = 5};
+    TestData d3 = {.id = "entry-3", .value = 16};
+    TestData d4 = {.id = "entry-3", .value = 65};
 
     LinkedListNode *node = LinkedListNode_alloc(&d1);
 

@@ -1,13 +1,11 @@
-#include <stdbool.h>
-#include <stdlib.h>
+#pragma once
+#include "linked_list.unity.h"
 
 struct LinkedListNode {
     struct LinkedListNode *prev;
     struct LinkedListNode *next;
     void *data;
 };
-
-typedef struct LinkedListNode LinkedListNode;
 
 LinkedListNode *LinkedListNode_alloc(void *data) {
     LinkedListNode *node = (LinkedListNode *)malloc(sizeof(LinkedListNode));

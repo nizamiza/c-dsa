@@ -7,7 +7,7 @@ It's Niza here. Recently I decided to come back to C and remember those fond uni
 ## Compilation
 
 ```sh
-clang -std=c99 -Wall -Wextra -Werror -pedantic ./linked-list/main.c -o ./out/linked_list
+clang linked_list/main.c -o ./out/linked_list
 ```
 
 ## License
