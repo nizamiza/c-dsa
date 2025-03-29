@@ -1,8 +1,4 @@
 CompileFlags:
   Add: [-xc, -std=c99, -Wall, -Wextra, -Werror, -pedantic]
-
-If:
-  PathMatch: .*\.h
-
-CompileFlags:
-  Add: [-Wno-unused-function]
+Diagnostics:
+  UnusedIncludes: None

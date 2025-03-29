@@ -1,6 +1,8 @@
 #pragma once
 #include "linked_list.unity.h"
 
+typedef struct LinkedListNode LinkedListNode;
+
 struct LinkedListNode {
     struct LinkedListNode *prev;
     struct LinkedListNode *next;
@@ -129,6 +131,7 @@ void LinkedList_clear(LinkedListNode *node) {
         current = next;
     }
 
+    node = NULL;
     return;
 }
 
@@ -169,5 +172,5 @@ LinkedListNode *LinkedList_reverse(LinkedListNode *node) {
         current = new_next;
     }
 
-    return new_prev->next;
+    return LinkedList_head(node);
 }
