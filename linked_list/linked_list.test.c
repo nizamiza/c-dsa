@@ -196,4 +196,6 @@ void test_LinkedList_reverse(void) {
     assert(n2->prev == n3);
     assert(n1->next == NULL);
     assert(n1->prev == n2);
+
+    LinkedList_clear(n1);
 }
