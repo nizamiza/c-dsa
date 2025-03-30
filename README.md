@@ -6,10 +6,10 @@ It's Niza here. Recently I decided to come back to C and remember those fond uni
 
 ## To-do list
 
--[x] Linked List
--[ ] Custom String
--[ ] 2-3 Tree
--[ ] Multiarray Structs
+- [x] Linked List
+- [ ] Custom String
+- [ ] 2-3 Tree
+- [ ] Multiarray Structs
 
 ## Compilation
 
